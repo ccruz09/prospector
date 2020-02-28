@@ -199,7 +199,7 @@ def _merge_profile_dict(priority, base):
 
     for key, value in priority.items():
         if key in ('strictness', 'doc-warnings', 'test-warnings', 'member-warnings',
-                   'output-format', 'autodetect', 'max-line-length',):
+                   'output-format', 'autodetect', 'max-line-length','output-target'):
             # some keys are simple values which are overwritten
             out[key] = value
         elif key in ('ignore', 'ignore-patterns', 'ignore-paths', 'uses',
